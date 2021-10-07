@@ -1,6 +1,6 @@
-import fs from "fs";
+const fs = require("fs");
 
-export const readFile = (path) => {
+exports.readFile = (path) => {
   try {
     const data = fs.readFileSync(path, "utf-8");
     console.log(data);

@@ -1,8 +1,8 @@
-import dotenv from "dotenv";
+const dotenv = require("dotenv");
 
 dotenv.config();
 
-export const dbConfig = {
+exports.dbConfig = {
   user: process.env.USER,
   host: process.env.HOST,
   database: process.env.DATABASE,

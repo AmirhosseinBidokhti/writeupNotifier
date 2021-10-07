@@ -1,6 +1,9 @@
-import axios from "axios";
-import { pool } from "./database/dbConnect.js";
-import { readFile } from "./utils/readFile.js";
+const { pool } = require("./database/dbConnect");
+
+const { readFile } = require("./utils/readFile");
+
+var axios = require("axios");
+var JSSoup = require("jssoup").default;
 
 pool.query("SELECT * from writeups", (err, res) => {
   if (err) {
@@ -10,9 +13,18 @@ pool.query("SELECT * from writeups", (err, res) => {
   console.log(res.rows);
 });
 
-//readFile("./blogs/urls.txt");
+readFile("./blogs/urls.txt");
 
 const res = axios
   .get("https://securitytrails.com/blog.rss")
-  .then((res) => console.log(res.data))
+  .then((res) => {
+    var soup = new JSSoup(res.data);
+
+    const titles = soup.findAll("title");
+    console.log(titles);
+    titles.map((title) => console.log(title.nextElement._text));
+    //const link = soup.findAll("link");
+
+    //console.log(link);
+  })
   .catch((err) => console.log(err));

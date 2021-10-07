@@ -1,6 +1,5 @@
-import { dbConfig } from "./dbConfig.js";
+const { dbConfig } = require("./dbConfig");
 
-import pkg from "pg";
-const { Pool } = pkg;
+const Pool = require("pg").Pool;
 
-export const pool = new Pool(dbConfig);
+exports.pool = new Pool(dbConfig);
