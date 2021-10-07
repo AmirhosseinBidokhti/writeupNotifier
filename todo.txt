@@ -1,0 +1,9 @@
+1. Database, table creation (done)
+
+2. Database connection and some test query (done)
+
+3. Reading file sample (done)
+
+---------------------------------------------------
+
+4. 
