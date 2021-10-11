@@ -1,15 +1,9 @@
 const { pool } = require("../database/dbConnect");
 
-class Car {
-  constructor(name, year) {
-    this.name = name;
-    this.year = year;
-  }
-  age() {
-    let date = new Date();
-    return date.getFullYear() - this.year;
-  }
-}
+//other syntax
+//const correntTime = require('../utils/currentTime')
+//correntTime.getCurrentTime()
+const { getCurrentTime } = require("../utils/currentTime");
 
 class WriteUp {
   constructor(title, url) {
@@ -54,25 +48,30 @@ class WriteUp {
       console.log(res.rows.length);
       console.log(this.getUrl());
     });
-    // pool.query(this.getQuery(), (err, res) => {
-    //   if (err) {
-    //     console.error(err.stack);
-    //   }
-
-    //   console.log(res.rows.length);
-    // });
   }
 
   // once we made sure the writeup does not exist, add it to database.
-  add() {}
+  add() {
+    this.setQuery(
+      "INSERT INTO writeups(title, url, create_date) VALUES($1, $2, $3)",
+      [this.getTitle(), this.getUrl(), getCurrentTime()]
+    );
+
+    pool.query(this.getQuery(), (err, res) => {
+      if (err) {
+        console.log(err.message);
+        return;
+      }
+      console.log(res.rows);
+    });
+  }
 }
 
-const writeup = new WriteUp(
-  "helloooo fake writeuppppp",
-  "https://fuckkkkkkkkkfakkkkkkefriend.com/fkewhfjwhkfwe/ewfkewhfuhwef/wejfgweyfgywef"
-);
+const writeup = new WriteUp("west", "https://test.com");
 
-writeup.exist();
+writeup.add();
+
+// writeup.exist();
 
 // this is working fine. now figure out why the earlier code didnt
 // pool.query(

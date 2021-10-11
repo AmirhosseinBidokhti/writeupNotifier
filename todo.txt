@@ -6,4 +6,16 @@
 
 ---------------------------------------------------
 
-4. 
+
+
+problems:
+some links are filtered, some are down(?) find a solution for that and error handling is really important here.
+
+some feeds are not following the pattern(<link>http://x.com</link>, ...) find a solution for that.
+
+some of the titles got the CDATA within it; that causes js to parse it undefined. find a solution for that.
+
+do not select all links. select all <link></link> that are children to <item></item>
+
+parsing a body response might causes errors (internet connection, timeout, dns resolve, ...) handle these properly.
+
