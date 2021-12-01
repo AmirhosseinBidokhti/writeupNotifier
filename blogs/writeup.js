@@ -1,26 +1,27 @@
-const { pool } = require("../database/dbConnect");
+const pool = require("../database/dbConnect");
 
-//other syntax
-//const correntTime = require('../utils/currentTime')
-//correntTime.getCurrentTime()
 const { getCurrentTime } = require("../utils/currentTime");
 
-class WriteUp {
-  constructor(title, url) {
+class Writeup {
+  constructor(title, url, pub_date) {
     this.title = title;
     this.url = url;
+    this.pub_date = pub_date;
     this.query = {
       text: "",
       values: [],
     };
   }
-
   getTitle() {
     return this.title;
   }
 
   getUrl() {
     return this.url;
+  }
+
+  getPubDate() {
+    return this.pub_date;
   }
 
   getQuery() {
@@ -32,53 +33,54 @@ class WriteUp {
     this.query.values = values;
   }
 
-  // query DB and check if the writeup already exists or not.
-  // return a boolean
   exist() {
     this.setQuery("SELECT * FROM writeups WHERE url = $1 AND title = $2", [
       this.getUrl(),
       this.getTitle(),
     ]);
 
+    let state = false;
+
     pool.query(this.getQuery(), (err, res) => {
       if (err) {
         console.error(err.stack);
       }
-
-      console.log(res.rows.length);
-      console.log(this.getUrl());
+      if (res.rows.length && res.rows[0].url == this.getUrl()) {
+        console.log("Writeup already exist!");
+        pool.end();
+        state = true;
+      } else {
+        console.log("Writeup not in database!");
+        pool.end();
+        state = false;
+      }
     });
+
+    return new Promise((resolve, reject) => resolve(state));
   }
 
-  // once we made sure the writeup does not exist, add it to database.
-  add() {
-    this.setQuery(
-      "INSERT INTO writeups(title, url, create_date) VALUES($1, $2, $3)",
-      [this.getTitle(), this.getUrl(), getCurrentTime()]
-    );
+  async add() {
+    if ((await this.exist()) == false) {
+      this.setQuery(
+        "INSERT INTO writeups(title, url, create_date) VALUES($1, $2, $3)",
+        [this.getTitle(), this.getUrl(), getCurrentTime()]
+      );
 
-    pool.query(this.getQuery(), (err, res) => {
-      if (err) {
-        console.log(err.message);
-        return;
-      }
-      console.log(res.rows);
-    });
+      pool.query(this.getQuery(), (err, res) => {
+        if (err) {
+          console.log(err.message);
+          pool.end();
+        }
+        console.log(res.rows);
+      });
+    } else {
+      console.log("fuck off");
+    }
   }
 }
 
-const writeup = new WriteUp("west", "https://test.com");
+module.exports = Writeup;
 
-writeup.add();
+var test = new Writeup("foo", "bar.com", "444");
 
-// writeup.exist();
-
-// this is working fine. now figure out why the earlier code didnt
-// pool.query(
-//   "SELECT * FROM writeups WHERE url = $1 AND title = $2",
-//   [
-//     "https://fuckkkkkkkkkfakkkkkkefriend.com/fkewhfjwhkfwe/ewfkewhfuhwef/wejfgweyfgywef",
-//     "helloooo fake writeuppppp",
-//   ],
-//   (err, res) => console.log(res.rows)
-// );
+test.add();

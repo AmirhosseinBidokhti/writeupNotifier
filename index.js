@@ -1,32 +1,85 @@
-//const { pool } = require("./database/dbConnect");
+let Parser = require("rss-parser");
+const blogParser = require("./blogs/parser");
+const colors = require("colors");
 
-const { readFile } = require("./utils/readFile");
+require("dotenv").config({ path: ".env" });
+const {
+  checkWriteupExist,
+  addWriteup,
+  getAllWriteups,
+} = require("./blogs/write");
+const msgFormatter = require("./utils/msgFormatter");
+const checkLink = require("./utils/checkLink");
+const { RSS_BLOGS } = require("./blogs/resources");
 
-var axios = require("axios");
-var JSSoup = require("jssoup").default;
 const { sendNotification } = require("./utils/sendNotification");
 
-const res = axios
-  .get("https://bitquark.co.uk/blog/feed.rss")
-  .then((res) => {
-    var soup = new JSSoup(res.data);
+let parser = new Parser();
 
-    const items = soup.findAll("item");
-    const titles = soup.findAll("title");
-    const links = soup.findAll("link");
-    const pubDates = soup.findAll("pubDate");
+async function mainCallback(blog) {
+  try {
+    const linkAlive = await checkLink(blog);
 
-    //console.log(items);
+    if (linkAlive.status === 200) {
+      let writeups = await blogParser(blog);
 
-    //titles.map((title) => console.log(title.nextElement._text));
-    titles.map((title, idx) => {
-      if (title.parent.name === "item") {
-        console.log(`${idx}. ${title.nextElement._text}`);
+      if (writeups !== undefined && writeups.length) {
+        writeups.map(async (writeup, idx) => {
+          let exists = await checkWriteupExist(writeup.link);
 
-        sendNotification(title.nextElement._text);
+          if (exists) {
+            console.log(`${writeup.title} already exists! Not adding it.`.red);
+            return;
+          } else {
+            console.log(`Adding ${writeup.title}`.green);
+            //await addWriteup(writeup);
+          }
+        });
       }
-    });
-    //links.map((link) => console.log(link.nextElement._text));
-    //pubDates.map((pubDate) => console.log(pubDate.nextElement._text));
-  })
-  .catch((err) => console.log(err));
+    }
+
+    console.log(linkAlive);
+  } catch (error) {
+    console.log(error);
+  }
+
+  // let writeups = await blogParser(blog);
+
+  // if (writeups !== undefined && writeups.length) {
+  //   writeups.map(async (writeup, idx) => {
+  //     let exists = await checkWriteupExist(writeup.link);
+
+  //     if (exists) {
+  //       console.log(`${writeup.title} already exists! Not adding it.`.red);
+  //       return;
+  //     } else {
+  //       console.log(`Adding ${writeup.title}`.green);
+  //       //await addWriteup(writeup);
+  //     }
+  //   });
+  // }
+}
+function iterateWithDelay(params, idx, interval, callback) {
+  return setTimeout(async function () {
+    callback(params);
+  }, idx * interval);
+}
+
+function main() {
+  RSS_BLOGS.map((RSSBlog, idx) =>
+    iterateWithDelay(RSSBlog, idx, 2000, mainCallback)
+  );
+}
+
+main();
+
+//test();
+
+// async function test(link) {
+//   try {
+//     const res = await checkLink(link);
+//     console.log(res);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }

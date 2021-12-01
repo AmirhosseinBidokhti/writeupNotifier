@@ -1,0 +1,453 @@
+0: GitLab AMA - Bug Bounty with Alex Chapman
+1: Bugcrowd Big Bugs: BitBucket Pipelines Kata Containers Build Container Escape
+2: Moby - Access to remapped root allows privilege escalation to real root
+3: Kata Containers `hostPath` file write
+4: Practical Security Recommendations for Start-ups with Limited Budgets
+5: GitLab - GitLab-Runner on Windows `DOCKER_AUTH_CONFIG` container host Command Injection
+6: Daily Swig - Collaborative bug hunting ‘could be very lucrative’ – security pro Alex Chapman on the future of ethical hacking
+7: Privileged Container Escape - Control Groups release_agent
+8: Bug Bounty and Other Inclusive Communities
+9: Information Security News Resources
+10: How To Start Bug Bounty For Beginners
+11: The Best Bug Bounty Recon Methodology
+12: Essential Bug Bounty Books for Beginners and Pros
+13: Nahamsec interviews Todayisnew
+14: Nahamsec interviews Masonhck357
+15: Must-Watch InfoSec Talks of 2020
+16: Daily Swig - Container security: Privilege escalation bug patched in Docker Engine
+17: Kata Containers - Improper file permissions for read-only volumes
+18: Nahamsec interviews Jason Haddix
+19: Bee Meets World - A Web Journey
+20: A Better Way To Use Twitter
+21: Nahamsec interviews Rhok
+22: Nahamsec interviews Naffy
+23: Nahamsec interviews Filedescriptor
+24: How Cake uses bug bounty programs as a tool for security transparency 
+25: How Artificial Intelligence is being used to match researchers with bug bounty programs
+26: ZTE widens bug bounty to focus on 5G security
+27: ZTE startet öffentliches Bug-Bounty-Programm
+28: Oculus SSO “Account Linking” bug leads to account takeover on third party websites and inside VR Games/Apps
+29: Facebook account takeover due to unsafe redirects after the OAuth flow
+30: A New Attack Surface on MS Exchange Part 1 - ProxyLogon!
+31: A Journey Combining Web Hacking and Binary Exploitation in Real World!
+32: Pwn a CTF Platform with Java JRMP Gadget
+33: How I Chained 4 vulnerabilities on GitHub Enterprise, From SSRF Execution Chain to RCE!
+34: HITCON 2016 投影片 - Bug Bounty 獎金獵人甘苦談 那些年我回報過的漏洞
+35: Introducing Associated Domains v2
+36: Aquatone: An HTTP-Based Attack Surface Visual Inspection Tool
+37: Day 78: HTB
+38: Introducing BBRF: yet another Bug Bounty Reconnaissance Framework
+39: Punicoder – discover domains that are phishing you
+40: Contextual Content Discovery: You've forgotten about the API endpoints
+41: Taking over Azure DevOps Accounts with 1 Click
+42: Dumping Plaintext RDP credentials from svchost.exe
+43: Password Spraying Secure Logon for F5 Networks
+44: Discovering Shadow APIs with Wallarm API firewall
+45: How My Rogue Android App Could Monitor & Brute-force Your App’s Sensitive Metadata
+46: The scholarship deadline extended to October 30
+47: Securing REST with free API Firewall. How-to guide
+48: <span>Burp Suite Professional: feature roundup</span>
+49: The history of OAST in Burp Suite
+50: Great getting started resources for new users of Burp Suite Professional
+51: Improved CI/CD integrations in Burp Suite Enterprise Edition
+52: Flying high in the Web Security Academy
+53: Burp Suite Professional - evolving the future of web security testing
+54: Finding your first bug: bounty hunting tips from the Burp Suite community
+55: How I got access to millions of [redacted] accounts
+56: I Built a TV That Plays All of Your Private YouTube Videos
+57: The Embedded YouTube Player Told Me What You Were Watching (and more)
+58: Dyplesher - Hack The Box
+59: Blunder - Hack The Box
+60: Nahamsec interviews Albinowax
+61: Nahamsec interviews Jobert Abma
+Request failed with status code 429
+62: Bug Bytes #145 – How to Make a Million in 4 Years, CookieMonster & Threats to CI/CD Pipelines
+Request failed with status code 429
+Request failed with status code 429
+63: Assises21 – Guillaume Vassault-Houlière, YesWeHack : « l’idée c’est d’être proactifs »
+64: Telenor släppte in hackare från SVT
+65: More secure Facebook Canvas : Tale of $126k worth of bugs that lead to Facebook Account Takeovers
+66: Facebook account takeover due to a bypass of allowed callback URLs in the OAuth flow
+67: How I Hacked Facebook Again! Unauthenticated RCE on MobileIron MDM
+68: Attacking SSL VPN - Part 1: PreAuth RCE on Palo Alto GlobalProtect, with Uber as Case Study!
+69: How I Chained 4 Bugs(Features?) into RCE on Amazon Collaboration System
+70: GitHub Enterprise SQL Injection
+71: How I Hacked Facebook, and Found Someone's Backdoor Script
+72: WHOIS History Update: Get the Full Historical View of a Company's WHOIS records
+73: Nmap on Windows: Installation and Usage Guide for Windows Users
+74: File descriptors — pwnable.kr
+75: Day 80: P64 is the new Medium
+76: CVE-2020-11518: how I bruteforced my way into your Active Directory
+77: How to: Burp ♥ OpenVPN
+78: I’ve Got You Under My Skin, Bill Evans Solo Transcription
+79: A Glossary of Blind SSRF Chains
+80: Zoom Zero Day Followup: Getting the RCE
+81: Extracting files from Burp Intruder Output
+82: Zero day vulnerabilities in Determine Selectica Contract Lifecycle Management (SCLM)
+83: Authentication bypass on Ubiquity’s Single Sign-On via subdomain takeover
+84: How I Could Steal Money from Instagram, Google and Microsoft
+Request failed with status code 429
+85: How I Could Compromise 4% (Locked) Instagram Accounts
+86: Wallarm NG WAF is ranked as a “High Performer” by G2, Spring 2021!
+87: Get Burp Suite certified for free...&nbsp;
+88: Burp Suite roadmap update: July 2021
+89: 20 Burp Suite tips from the Burp user community
+90: <span>Experience Burp Suite Enterprise Edition in a new live demo</span>
+91: <span>API Scanning with Burp Suite</span>
+92: How to enable dark mode in Burp Suite
+93: Web Security Academy - your questions answered
+94: The latest PortSwigger research is coming to Black Hat Europe 2020
+95: Security is everybody's problem: The key to breaking the AppSec barrier.
+96: Popping a shell on the Oculus developer portal
+97: Bug Bytes #148 –  Google SSRF filmed, A 1 N/A bug to $15k & Tuning raced conditions
+98: Why join Intigriti? Here’s 16 reasons why you’ll love working here
+99: Bug Bytes #144 – Bug hunting on the modern Web, Token spraying & Discourse RCE
+100: Cybersecurity Awareness Month 2021: Here’s What the Experts Have to Say
+101: ZTE Corporation Partners with YesWeHack to Expand Bug Bounty
+102: NIS 2 ein Rückschritt für die Cybersicherheit
+103: Oversightboard.com site-wide CSRF due to missing checking
+104: One-click reflected XSS in www.instagram.com due to unfiltered URI schemes leads to account takeover
+Request failed with status code 429
+105: 你用它上網，我用它進你內網! 中華電信數據機遠端代碼執行漏洞
+Request failed with status code 429
+106: Attacking SSL VPN - Part 3: The Golden Pulse Secure SSL VPN RCE Chain, with Twitter as Case Study!
+107: A Wormable XSS on HackMD!
+108: Hacking Jenkins Part 1 - Play with Dynamic Routing
+Request failed with status code 429
+109: Uber 遠端代碼執行- Uber.com Remote Code Execution via Flask Jinja2 Template Injection
+110: Open and Exposed Databases: Risks and Mitigation Techniques Explained
+111: SecurityTrails Bolsters Executive Team
+112: SolarWinds what probably (most-likely) happened…
+113: Day 82: Hunting for Vulnerabilities in Android Apps with Burp and APK Tools
+114: XXE-scape through the front door: circumventing the firewall with HTTP request smuggling
+115: HTTP Request Smuggling – 5 Practical Tips
+116: H2C Smuggling in the Wild
+117: Expanding the Attack Surface: React Native Android Applications
+118: Dumping LAPS Passwords from Linux
+119: Managing Active Directory groups from Linux
+120: Authentication bypass on Airbnb via OAuth tokens theft
+121: Hack.LU 2016 CTF DataOnly Writeup
+122: InstaBrute: Two Ways to Brute-force Instagram Account Credentials
+123: An Introduction to the Specifics of Start-Ups Security
+124: Improvements to Burp Suite authenticated scanning
+125: It's now easier than ever to scan at scale with Burp Suite Enterprise Edition
+126: Some of the best Burp extensions - as chosen by you
+127: PortSwigger teams up with HackerOne for AppSec workshop - 6 April
+Request failed with status code 429
+128: Web application cartography: mapping out Burp Suite’s crawler
+129: <span>7 Burp Suite Professional-exclusive features to help you test smarter</span>
+130: What are AppSec leaders prioritizing in 2021? The survey results are in
+131: The state of DevSecOps: the latest stats and trends in 2020
+132: The most popular subdomains on the internet
+133: GoSpider – Hacker Tools:  Enumerate the web! �‍�
+134: ZTE Expands Bug Rewards To Focus on 5G Security
+135: Disclose unconfirmed email/phone of a Facebook user
+136: An analysis and thought about recently PHP-FPM RCE(CVE-2019-11043)
+137: Hacking Jenkins Part 2 - Abusing Meta Programming for Unauthenticated RCE!
+138: [隨筆] Java Web 漏洞生態食物鏈
+139: Uniscan: An RFI, LFI, and RCE Vulnerability Scanner
+140: Day 77: Should I Leave Medium? Plus Java Shell/Escape issues with RCE
+141: Sitecore Experience Platform Pre-Auth RCE - CVE-2021-42237
+142: The Dangers of Endpoint Discovery in VIPRE Endpoint Security
+143: Wallarm starts to highlight CVE to address OWASP Top-10 A6 Vulnerable and Outdated Components
+144: Wallarm API Firewall outperforms Nginx in a production environment
+145: Burp extensions added to Burp Suite Enterprise Edition
+146: Simplified cloud deployment for Burp Suite Enterprise Edition
+147: Hack your APIs: interview with Corey Ball - API security expert
+148: Burp Suite tips from power user and "hackfluencer" Stök
+Request failed with status code 429
+149: Modern password hashing in PHP
+Request failed with status code 429
+150: Unbalanced - Hack The Box
+151: Subdomain Enumeration: Doing it a Bit Smarter
+152: OSINT Primer: Domains (Part 1)
+153: Cr0wnGhoul 1ETH Puzzle: You’ve Got Mail Write-up
+154: H1-5411 CTF Write-up by erbbysam and ziot
+155: View the raw content of a CMSObject
+156: Solutions for XSS Challenge – Sh*t it’s a WAF
+157: 5 RCEs in npm for $15,000
+158: House Of Red
+159: Secret Hitler Account Takeover
+160: Bug Bounties 101 - Getting Started
+161: Stealing Facebook Access Tokens with a Double Submit
+162: Stealing Chat session ID with CORS and execute CSRF attack
+163: VPN Extensions are not for privacy
+164: Overflow Trilogy
+165: Turning Simple Login CSRF to Account Takeover
+166: AirBnb Bug Bounty: Turning Self-XSS into Good-XSS #2
+167: Hacker Days: Understanding AWS cloud attacks using CloudGoat — OWASP Bay Area
+168: Windows DLL Hijacking (Hopefully) Clarified
+169: Patrik’s Bug Bounty �️Tools�️
+170: Nginx Integer Truncation
+Request failed with status code 429
+171: Bug Bytes #147 – From won’t fix to $100k+ bounties, HTTP Header Smuggling & ChaosDB
+Request failed with status code 429
+172: Pour Parrot, la cybersécurité est un devoir et un atout concurrentiel
+173: Identify a Facebook user by his phone number despite privacy settings set
+174: Attacking SSL VPN - Part 2: Breaking the Fortigate SSL VPN
+175: HITCON CTF 2018 - One Line PHP Challenge
+176: Collection of CTF Web Challenges I made
+177: Nmap Cheat Sheet - Reference Guide
+178: WILSON Cloud Respwnder
+179: Exploiting GraphQL
+180: Hacking on Bug Bounties for Four Years
+181: Exploiting LDAP Server NULL Bind
+182: Authentication bypass on Uber’s Single Sign-On via subdomain takeover
+183: HackerOne Web Authentication Endpoint Credentials Brute-Force Vulnerability
+184: Burp Suite certification prices hacked for Black Friday
+185: Introducing the Burp Suite Certified Practitioner accreditation
+186: Browser powered scanning in Burp Suite
+187: Burp Suite Professional: become an early adopter
+188: Exfiltrating files with BusyBox
+189: Admob creative image cross-site scripting vulnerability
+190: Delivery - Hack The Box
+191: Subdomain Takeover: Going for High Impact
+192: OSINT Primer: People (Part 2)
+Request failed with status code 429
+193: Subdomain Takeover: Starbucks points to Azure
+194: Disclose the creator (Facebook User) of a Facebook application
+195: osCommerce v2.x SQL Injection Vulnerability
+196: College Applications
+197: pico19 Sice Cream
+198: From Bug Bounty Hunter, to Engineer, and Beyond
+199: Cookie Stealing on Customer Internet Connections
+200: TryHackMe — Jeff
+201: H1-212 CTF - Writeup
+202: The misunderstood X-XSS-Protection
+203: Stored XSS in Paytium 3.0.13 WordPress Plugin
+204: Cross Site Scripting for Fun: PasteJacking
+205: The Change — My Experience at Appsecco
+206: An Unconventional Exploit for the RpcEptMapper Registry Key Vulnerability
+207: [Paper] Analysis of security vulnerabilities in Microsoft Office 365 in regard to SAML
+208: PostgreSQL, advanced use of generate_series for data generation
+209: Bug Bytes #146 – Driftwood, Trojan Source & XSS via smart contract
+210: ZTE startet öffentliches Bug-Bounty-Programm bei YesWeHack
+211: Account takeover of Instagram accounts due to unrestricted permissions of third-party application’s generated tokens
+212: A New Attack Surface on MS Exchange Part 2 - ProxyOracle!
+213: PHP CVE-2018-5711 - Hanging Websites by a Harmful GIF
+Request failed with status code 429
+214: AutoRecon: A Multi-Threaded Network Reconnaissance Tool
+Request failed with status code 429
+215: Days 83, 84, 85 & 86 on https://labs.p64cyber.com
+216: Day 79: FTP Pentest Guide
+217: From blind XXE to root-level file read access
+218: Finding Hidden Files and Folders on IIS using BigQuery
+219: Alternative ways to Pass the Hash (PtH)
+220: Hack.LU 2016 CTF CthCoin Writeup
+221: 5 Themes for Product Security and Fostering Organizational Growth
+222: Introducing DOM Invader: DOM XSS just got a whole lot easier to find
+223: AppSec experts share Burp Suite automation secrets and best practices
+224: Burp Suite roadmap for 2021
+225: PortSwigger is recognized as a 2020 Gartner Peer Insights Customers' Choice for Application Security Testing*
+226: Google Sites: A Tale of Five Vulnerabilities
+227: Buff - Hack The Box
+228: Subdomain Enumeration: 2019 Workflow
+229: Subdomain Takeover: Basics
+230: coin_artist 50k Follower Puzzle – Write-up
+231: Disclose the owner (Facebook user) of a bulletin.com publication
+232: XSS Challenge – Sh*t it’s a WAF
+233: Empires and Deserts
+234: Tiktok
+235: Secret Hitler Vulns
+236: SafeCurl "Capture the Bitcoins" Post-Mortem
+237: Framing, Part 1: Click-Jacking Etsy
+238: Guide Point Security CTF — Get Hexy (OCT 2021)
+Request failed with status code 429
+239: Boston Key Party Writeup
+240: INSOMNI'HACK Teaser
+241: Leaked Salesforce API access token at IKEA.com
+242: Exploiting Misconfigured CORS via Wildcard Subdomains
+243: Exploiting Misconfigured CORS (Cross Origin Resource Sharing)
+244: My Journey @Appsecco
+245: CVE-2020-1170 - Microsoft Windows Defender Elevation of Privilege Vulnerability
+246: The Stony Path of Android � Bug Bounty – Bypassing Certificate Pinning
+247: Web Security, Dompdf security issues details
+248: The unexpected dangers of preg_replace()
+249: Ready - Hack The Box
+250: Subdomain Enumeration: Filter Wildcard Domains
+251: Finding Phishing: Tools and Techniques
+252: BT’s Metaversal Album Treasure Hunt Solution
+253: Bulletin.com email address leak
+254: Vulnerability in Youtube allowed moving comments from any video to another
+255: dmzf
+256: Java Tricks
+Request failed with status code 429
+257: Bypassing Google Authentication on Periscope's Administration Panel
+Request failed with status code 429
+258: Overwriting Banner Images on Etsy
+Request failed with status code 429
+259: HOW I HACKED BILLION ANDROID USERS SOCIAL AND 3rd PARTY ACCOUNT | A STORY ABOUT 5000$ BUG
+260: RCE on Steam Client via buffer overflow in Server Info
+261: Google YOLO
+262: CRLF injection on Twitter or why blacklists fail
+263: Reflected XSS at Philips.com
+264: Starting Bug Bounty ? | Bug Bounty Resources
+265: Exploiting weak configurations in Google Identity Platform
+266: PrintSpoofer - Abusing Impersonation Privileges on Windows 10 and Server 2019
+267: How I made more than $30K with Jolokia CVEs
+268: Checking HTTP Smuggling issues in 2015 - Part1
+269: Amazon packaging feedback cross-site scripting vulnerability
+270: Cache - Hack The Box
+271: OSINT Primer: Organizations (Part 3)
+272: A Tale of Exploitation in Spreadsheet File Conversions
+273: Facebook Page Owner (Admin) Disclosure
+274: SBX Intro
+275: babyllvm
+276: pico18 jbr
+277: SafeCurl: SSRF Protection, and a "Capture the Bitcoins"
+278: Persistent XSS on myworld.ebay.com
+279: A story of another awesome old school hacking that lead to a cool P1 bug
+Request failed with status code 429
+280: Google CTF - Writeup
+Request failed with status code 429
+281: CSS: Cascading Style Scripting
+282: Email content spoofing at IKEA.com
+283: Exploiting JSON Cross Site Request Forgery (CSRF) using Flash
+284: Zerologon (CVE-2020–1472) detection, patching and monitoring
+285: Windows RpcEptMapper Service Insecure Registry Permissions EoP
+286: Geschützt: Digging into the Shopify POS Firmware (Part 1)
+287: Security: HTTP Smuggling, Apache Traffic Server
+288: Stealing Your Private YouTube Videos, One Frame at a Time
+289: Fuse - Hack The Box
+290: Subdomain Takeover: Going beyond CNAME
+291: h@cktivitycon – Pizza Time (Web 750)
+292: Missing permission check for Facebook gaming community invites
+293: One Vulnerability allowed deleting comments of any user in all Yahoo sites
+294: Adult CSP
+295: pico19 Ghost Diary
+296: Messenger.com Site-Wide CSRF
+297: Hijacking a Facebook Account with SMS
+298: How I was able to send SMS from target and get their OTP.
+299: GitHub Desktop RCE (OSX)
+300: Testing new features
+301: Analysis on Internet Explorer's UXSS
+Request failed with status code 429
+302: XXE at Bol.com
+Request failed with status code 429
+303: Thoughts on Security Engineering — How to Secure Systems in Real World
+304: From RpcView to PetitPotam
+305: [BugBounty] Sleeping stored Google XSS Awakens a $5000 Bounty
+Request failed with status code 429
+306: AirPair, Drupal with PHP-FPM, Apache or Nginx
+307: The unexpected Google wide domain check bypass
+308: Tabby - Hack The Box
+309: Subdomain Takeover: Identifying Providers
+310: coin_artist – 34700 $coin Puzzle Write-Up ($20,000)
+311: Access to CrowdTangle Deletion Framework API
+312: Breaking GitHub Private Pages for $35k
+313: Tasteless CTF 2019
+314: pico18 Dog or Frog
+315: An XSS on Facebook via PNGs & Wonky Content Types
+316: Removing Covers Images on Friendship Pages, on Facebook
+317: Laravel 8.x image upload bypass — Zero Day
+318: H1702 CTF 2017 - Writeups
+319: CSP 2015
+320: Blind SQL Injection at fasteditor.hema.com
+321: Local file inclusion at IKEA.com
+322: My experience as an intern learning about DevSecOps at Appsecco.
+323: Fuzzing Windows RPC with RpcView
+324: [Research] Phishermans Friend – Getting control over a phishing backend
+325: Security: HTTP Smuggling, Jetty
+326: Subdomain Takeover: Finding Candidates
+Request failed with status code 429
+327: NahamCon – Trash the Cache Write-up (Web 1000)
+328: Disclose group members of a Facebook campus (https://www.facebook.com/campus/)
+329: Twitter Vulnerability Could Delete Credit Cards from Any Twitter Account
+330: Shattered
+331: CSAW Red 19 Tumbler
+332: Obtaining Login Tokens for an Outlook, Office or Azure Account
+333: Instagram's One-Click Privacy Switch
+334: Bypassed the subscription and got the certification
+335: H1-202 CTF - Writeup
+336: RPO Gadgets
+337: Reflected XSS at fotoservice.hema.nl
+338: Exploiting unusual Referer based XSS
+339: Kubernetes From an Attacker’s Perspective — OWASP Bay Area Meetup
+340: Do You Really Know About LSA Protection (RunAsPPL)?
+341: [BugBounty] Decoding a $�,000.00 htpasswd bounty
+342: Security: HTTP Smuggling, Apsis Pound load balancer
+343: Subdomain Takeover: Yet another Starbucks case
+344: JosieBellini’s Yours Truly Puzzle Walkthrough
+345: Disclose page admin on KnowledgeNote GraphQL Object
+Request failed with status code 429
+346: BookFresh Tricky File Upload Bypass to RCE
+347: SSD November
+348: Seating Charts
+349: Uber Bug Bounty: Turning Self-XSS into Good-XSS
+Request failed with status code 429
+350: Content Types and XSS: Facebook Studio
+351: Command Injection — All in one Blog
+352: SSRF in Shopify Exchange to RCE
+353: Internet Explorer has a URL problem
+354: Persistent XSS (unvalidated Open Graph embed) at LinkedIn.com
+355: Uber | Exploiting Stored URL Redirect in Password Reset Token
+356: Appsecco hosting a private AllDayDevOps 2020 Virtual Viewing Party
+357: Windows .Net Core SDK Elevation of Privilege
+358: [Paper] Messaging Queues in the IoT under pressure – Stress Testing the Mosquitto MQTT Broker
+359: Details of DRUPAL_SA_CORE_2014_003 Deny Of Service
+360: HTB: BountyHunter
+361: HTB: Nunchucks
+362: Reviving and Refactoring DNS Enum
+363: RunCode Live 2021 Solutions
+364: Locking Down SSH - The Right Way
+365: HTB: Intelligence
+366: HTB: Three More PivotAPI Unintendeds
+367: Pass the Way to DA
+Request failed with status code 429
+368: AutoPoC - Validating the Lack of Validation in PoCs
+Request failed with status code 429
+369: HTB: Seal
+370: Certified Red Team Operator (CRTO) - Red Team Ops I Review
+371: LTR102 - Teaser
+372: Ford Focus RS MK3 (Potentially For Sale)
+373: 2020 - A year of Ups and Downs
+374: ADExplorer Exporting Quick Tip
+375: Social Profiling - OSINT for Red/Blue
+376: HTB: Union
+377: Understanding Cobalt Strike Profiles
+378: Learning The [Defence] Ropes 101 - Splunk Setup & Config
+379: HTB: PivotAPI
+380: Some of the [Many] Problems with Security Skills
+381: Flare-On 2021: PetTheKitty
+382: Old but Gold - Attack and Defend the Sys Admins
+383: Flare-On 2021: known
+384: Paving The Way to DA - Complete Post (Pt 1,2 & 3)
+385: Nahamsec interviews Alyssa Herrera
+386: Bug Bytes #143 – Building an Apache SSRF exploit, Thesis on HTTP Request Smuggling & Turbo Intruder go brrr
+387: Multiple bugs allowed malicious Android Applications to takeover Facebook/Workplace accounts
+388: A New Attack Surface on MS Exchange Part 3 - ProxyShell!
+389: Google CTF 2018 Quals Web Challenge - gCalc
+Request failed with status code 429
+390: Announcing New Features in Attack Surface Reduction
+391: LEVEL 01 — IO WARGAME
+392: Day 80: Becoming a Version Detection Ninja with GIT
+393: RCE in Slanger, a Ruby implementation of Pusher
+Request failed with status code 429
+394: Resetting Expired Passwords Remotely
+395: Scholarship Results
+396: The‌ ‌Biggest‌ ‌Hacker‌ ‌Attacks‌ ‌on‌ ‌Gambling‌
+397: Black Hat USA 2021: PortSwigger's latest research to be unveiled
+398: Recorded logins in Burp Scanner
+399: Get started with DevSecOps: insights from Aleksandr Krasnov - Product Security Engineer
+400: Burp Suite Enterprise Edition: six months of new features
+401: Tesla Motors blind SQL injection
+402: Intense - Hack The Box
+403: Subdomain Takeover: Second Order Bugs
+404: DEFCON 29 CTF Qualifier: 3FACTOOORX Write-up
+405: View the country of a private Instagram User
+406: ASUS RT-AC68U RCE
+407: pico19 Secret Hitler
+408: tj18 Abyss
+409: Abusing CORS for an XSS on Flickr
+410: Vodafone: No Pasting into Password Fields
+411: Exploiting Password Reset Poisoning
+Request failed with status code 429
+412: HXP CTF 2017 - Writeup
+Request failed with status code 429
+413: Cross-Origin CSS Attacks Revisited (feat. UTF-16)
+414: Persistent XSS (Unvalidated oEmbed) at Medium.com
+415: Hijacking tons of Instapage expired users Domains & Subdomains
+416: Exploiting weak configurations in Amazon Cognito in AWS
+417: Chimichurri Reloaded - Giving a Second Life to a 10-year old Windows Vulnerability
+418: [Tools] Visual Recon – A beginners guide
+419: Web Security, using bad HTML to escape from a DIV

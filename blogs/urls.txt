@@ -37,19 +37,3 @@ https://seanmelia.wordpress.com/feed/
 https://gracefulsecurity.com/feed/
 https://secgeek.net/category/write-ups/feed/
 https://philippeharewood.com/feed/
-
-## Example for medium tags:
-##https://medium.com/feed/tag/ethical-hacking
-
-##https://spaceraccoon.dev/feed/
-##https://appsecwiki.com/#/
-##https://samcurry.net/feed/
-##https://xdavidhu.me/
-##https://www.bugbountyhunter.com/disclosed/
-##https://ahussam.me/feed.xml
-##https://bugbountyforum.com/feed.xml
-##https://klikki.fi/
-##http://blog.redxorblue.com/feeds/posts/default
-##https://web-in-security.blogspot.com/feeds/posts/default
-##https://brutelogic.com.br/blog/feed/
-##https://tisiphone.net/feed/

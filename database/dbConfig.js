@@ -8,8 +8,8 @@ const dbConfig = {
   port: process.env.PORT,
 };
 
-//exports.module = { dbConfig };
+console.log(dbConfig);
 
-exports.dbConfig = dbConfig;
+module.exports = dbConfig;
 
 // fuck commonjs. es6+ syntax is lit!

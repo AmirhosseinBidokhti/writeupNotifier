@@ -1,7 +1,7 @@
 {
   "name": "writeup_notifier",
   "version": "1.0.0",
-  "description": "Gathering the latest infosec writeups to custom telegram channel",
+  "description": "Gathering the latest infosec writeups",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,8 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.22.0",
+    "chalk": "^5.0.0",
+    "colors": "^1.4.0",
     "dotenv": "^10.0.0",
-    "jssoup": "0.0.15",
-    "pg": "^8.7.1"
+    "pg": "^8.7.1",
+    "rss-parser": "^3.12.0"
   }
 }
