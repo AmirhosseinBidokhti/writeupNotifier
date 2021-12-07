@@ -11,3 +11,5 @@ To-do:
 - Add full usage guide
 
 
+![Screenshot (3081)](https://user-images.githubusercontent.com/67857068/145074798-123f1b56-02cd-471b-894f-1539911b8e5e.png)
+![Screenshot (3082)](https://user-images.githubusercontent.com/67857068/145074806-17fceca2-fb5a-4d5f-83b0-5910e6cb2353.png)
