@@ -2,85 +2,53 @@ const pool = require("../database/dbConnect");
 
 const { getCurrentTime } = require("../utils/currentTime");
 
-class Writeup {
-  constructor(title, url, pub_date) {
-    this.title = title;
-    this.url = url;
-    this.pub_date = pub_date;
-    this.query = {
-      text: "",
-      values: [],
-    };
-  }
-  getTitle() {
-    return this.title;
-  }
-
-  getUrl() {
-    return this.url;
-  }
-
-  getPubDate() {
-    return this.pub_date;
-  }
-
-  getQuery() {
-    return this.query;
-  }
-
-  setQuery(text, values) {
-    this.query.text = text;
-    this.query.values = values;
-  }
-
-  exist() {
-    this.setQuery("SELECT * FROM writeups WHERE url = $1 AND title = $2", [
-      this.getUrl(),
-      this.getTitle(),
-    ]);
-
-    let state = false;
-
-    pool.query(this.getQuery(), (err, res) => {
+function checkWriteupExist(url) {
+  return new Promise((resolve, reject) => {
+    pool.query("SELECT * FROM writeups WHERE url = $1", [url], (err, res) => {
       if (err) {
-        console.error(err.stack);
+        reject(err);
+        pool.end();
       }
-      if (res.rows.length && res.rows[0].url == this.getUrl()) {
-        console.log("Writeup already exist!");
-        pool.end();
-        state = true;
+      if (res.rows.length) {
+        resolve(true);
+        //pool.end();
       } else {
-        console.log("Writeup not in database!");
-        pool.end();
-        state = false;
+        resolve(false);
+        //pool.end();
       }
     });
-
-    return new Promise((resolve, reject) => resolve(state));
-  }
-
-  async add() {
-    if ((await this.exist()) == false) {
-      this.setQuery(
-        "INSERT INTO writeups(title, url, create_date) VALUES($1, $2, $3)",
-        [this.getTitle(), this.getUrl(), getCurrentTime()]
-      );
-
-      pool.query(this.getQuery(), (err, res) => {
-        if (err) {
-          console.log(err.message);
-          pool.end();
-        }
-        console.log(res.rows);
-      });
-    } else {
-      console.log("fuck off");
-    }
-  }
+  });
 }
 
-module.exports = Writeup;
+function addWriteup({ title, link, pubDate }) {
+  return new Promise((resolve, reject) => {
+    pool.query(
+      "INSERT INTO writeups(title, url, pub_date, create_date) VALUES($1, $2, $3, $4)",
+      [title, link, pubDate, getCurrentTime()],
+      (err, res) => {
+        if (err) {
+          reject(`Error adding to database: ${err.message}`);
+          //pool.end();
+        }
+        resolve(res);
+      }
+    );
+  });
+}
 
-var test = new Writeup("foo", "bar.com", "444");
+function getAllWriteups() {
+  return new Promise((resolve, reject) => {
+    pool.query("SELECT title, url, pub_date FROM writeups", (err, res) => {
+      if (err) {
+        console.log(err);
+        reject(err);
+        pool.end();
+      }
+      if (res.rows.length) {
+        resolve(res.rows);
+      }
+    });
+  });
+}
 
-test.add();
+module.exports = { checkWriteupExist, addWriteup, getAllWriteups };

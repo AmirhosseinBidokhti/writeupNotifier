@@ -11,5 +11,3 @@ const dbConfig = {
 console.log(dbConfig);
 
 module.exports = dbConfig;
-
-// fuck commonjs. es6+ syntax is lit!

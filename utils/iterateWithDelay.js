@@ -3,3 +3,5 @@ function iterateWithDelay(params, idx, interval, callback) {
     callback(params);
   }, idx * interval);
 }
+
+module.exports = iterateWithDelay;
