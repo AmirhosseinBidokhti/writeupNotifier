@@ -8,6 +8,6 @@ const dbConfig = {
   port: process.env.PORT,
 };
 
-console.log(dbConfig);
+//console.log(dbConfig);
 
 module.exports = dbConfig;

@@ -5,9 +5,9 @@ const { checkWriteupExist, addWriteup } = require("./blogs/writeup");
 const msgFormatter = require("./utils/msgFormatter");
 const { checkLinkDNS } = require("./utils/checkLink");
 const { RSS_BLOGS } = require("./blogs/resources");
-
 const { sendNotification } = require("./utils/sendNotification");
 const iterateWithDelay = require("./utils/iterateWithDelay");
+const banner = require("./utils/banner");
 
 async function mainCallback(blog) {
   try {
@@ -36,6 +36,7 @@ async function mainCallback(blog) {
 }
 
 async function main() {
+  banner();
   const liveLinks = await checkLinkDNS(RSS_BLOGS);
 
   liveLinks.map((RSSBlog, idx) =>

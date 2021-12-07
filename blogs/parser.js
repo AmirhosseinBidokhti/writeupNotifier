@@ -18,7 +18,7 @@ async function blogParser(url) {
     });
     return writeups;
   } catch (error) {
-    console.log(error.message);
+    console.log(`Error while parsing: ${error.message}`);
   }
 }
 

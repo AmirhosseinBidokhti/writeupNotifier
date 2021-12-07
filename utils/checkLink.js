@@ -35,7 +35,7 @@ function checkLinkDNS(domains) {
             console.log(
               `[+]: Live or down check for ${validDomain.underline.bold}`
             );
-            return resolve({ domain: `https://${validDomain}${path}`, ip: ip });
+            return resolve({ domain: domain, ip: ip });
           });
         })
       );
