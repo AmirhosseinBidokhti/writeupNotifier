@@ -1,5 +1,6 @@
 import dns from 'dns';
 import axios from 'axios';
+import { BlogPost } from './storage';
 
 // Returns a promise that resolves after a specified number of milliseconds.
 export const delay = (ms: number): Promise<void> => new Promise((resolve) => setTimeout(resolve, ms));
@@ -54,4 +55,12 @@ export const isURLLive = async (url: string): Promise<boolean> => {
     console.error(`Error checking URL: ${url}`, error);
     return false;
   }
+};
+
+export const formatMessage = (msg: BlogPost): string => {
+  const link = '➡';
+  const date = '📆';
+
+  const message = [`*${msg.title}*\n`, `${link} []${msg.link}\n`, `${date} ${msg.pubDate}`].join('\n');
+  return message;
 };

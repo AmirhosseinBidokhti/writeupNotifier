@@ -3,7 +3,7 @@ import { Command } from 'commander';
 import { addBlogPosts, BlogPost, filterNewPosts, initializeDataFile } from './storage';
 import { RSS_BLOGS, setupMediumTags, setupMediumUsers } from './resources';
 import { fetchBlogsByDelay } from './blog-parser';
-import { delay } from './utils';
+import { delay, formatMessage } from './utils';
 import { createNotificationService } from './notification';
 import { cronSchedule } from './cron-scheduler';
 
@@ -38,6 +38,7 @@ const fetchAndNotify = async () => {
   const mediumTagPosts = await fetchBlogsByDelay([...setupMediumTags()], DEFAULT_FETCH_DELAY);
   const mediumUserPosts = await fetchBlogsByDelay([...setupMediumUsers()], DEFAULT_FETCH_DELAY);
 
+  allBlogPosts.push(...rssBlogsPosts);
   allBlogPosts.push(...rssBlogsPosts, ...mediumTagPosts, ...mediumUserPosts);
 
   console.log('Identifying new posts...');
@@ -47,7 +48,9 @@ const fetchAndNotify = async () => {
     console.log(`Found ${newPosts.length} new posts. Sending notifications...`);
     const notificationService = createNotificationService();
     for (const post of newPosts) {
-      await notificationService.sendNotification(`New Blog Post: ${post.title}\n${post.link}`);
+      //await notificationService.sendNotification(`New Blog Post: ${post.title}\n${post.link}`);
+      const message = formatMessage(post);
+      await notificationService.sendNotification(message);
       await delay(DEFAULT_NOTIFICATION_DELAY);
     }
     console.log('Notifications sent. Updating data file...');
