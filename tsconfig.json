@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/node22/tsconfig.json",
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "webpack.config.js"],
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "Node16",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
